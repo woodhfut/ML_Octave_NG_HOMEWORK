@@ -20,8 +20,8 @@ S = zeros(n);
 %       number of examples).
 %
 
-sigma = (1/m)*X'*X;
-
+%sigma = (1/m)*X'*X;
+sigma = cov(X);
 [U,S,V] = svd(sigma);
 
 
